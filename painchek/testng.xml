@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testcase.painchek.Login"/>
+      <class name="testcase.painchek.P3"/>
+      <class name="testcase.painchek.P4"/>
+       <class name="testcase.painchek.SSO"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

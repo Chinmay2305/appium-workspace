@@ -1,0 +1,82 @@
+Understock Inventories Properties
+url = https://qa.aerfinity.acumenaviation.in/inventory/under-stock
+
+inventories_menu_link = //div[contains(@class,'MuiDrawer-root')]/div/ul/a[3]
+inventories_link = //header[contains(@class,'MuiPaper-root')]/div/div/div/a[4]
+export_btn = (//div[contains(@class,'MuiGrid2-root')])[6]/div/button[3]
+export_location = C:\\Users\\DELL\\Downloads\\Understock.xlsx
+tablelocator = //table[contains(@class,'MuiTable-root')]
+inventories_colconfig_btn = (//div[contains(@class,'MuiBox-root')])[6]
+inventories_colconfig_xpath = (//ul[contains(@class,'MuiList-root')])[2]/li
+historic_button = //input[contains(@class,'PrivateSwitchBase-input')]
+historic_color = ((//div[contains(@class,'MuiBox-root')])[7]/label/span/span)[1]
+expand_button = //tbody[contains(@class,'MuiTableBody-root')]/tr/td[position()=1]
+next_page_arrow = (//button[contains(@class,'MuiPaginationItem-previousNext')])[2]
+
+Filter_Inventories properties
+filter_btn = (//div[contains(@class,'MuiGrid2-root')])[6]/div/button[2]
+filter_apply = (//div[contains(@class,'MuiBox-root')]/button[contains(@class,'MuiButtonBase-root')]/span[contains(@class,'MuiButton-icon')])[3]
+filter_cancel = (//div[contains(@class,'MuiPaper-root')]/div[contains(@class,'MuiBox-root')])/div[3]/button[2]
+
+filter_pn = //input[contains(@name,'pn')]
+filter_pn_title_locator = (//label)[2]
+filter_pn_title = Part Number
+filter_pn_placeholder = Enter Part Number
+column_pn = //tbody[contains(@class,'MuiTableBody-root')]/tr/td[position()=1]
+filterdata_pn = 0-182-005325000
+
+filter_sn = //input[contains(@name,'serial_number')]
+filter_sn_title_locator = (//label)[3]
+filter_sn_title = Serial Number
+filter_sn_placeholder = Enter Serial Number
+column_sn = //tbody[contains(@class,'MuiTableBody-root')]/tr/td[position()=17]
+filterdata_sn = 13220
+
+filter_description = //input[contains(@name,'description')]
+filter_description_title_locator = (//label)[4]
+filter_description_title = Description
+filter_description_placeholder = Enter Description
+column_description = //tbody[contains(@class,'MuiTableBody-root')]/tr/td[position()=2]
+filterdata_description = Seal-Station
+
+filter_qty = (//div[contains(@class,'MuiPaper-root')]/div[contains(@class,'MuiBox-root')]/div[contains(@class,'MuiBox-root')][2]/div)[4]/div/div/div/input
+filter_qty_title_locator = (//label)[5]
+filter_qty_title = QTY in Stock
+filter_qty_placeholder = Search QTY in Stock
+column_qty = //tbody[contains(@class,'MuiTableBody-root')]/tr/td[position()=4]
+filterdata_qty = 2
+
+filter_parttier = (//div[contains(@class,'MuiPaper-root')]/div[contains(@class,'MuiBox-root')]/div[contains(@class,'MuiBox-root')][2]/div)[5]/div/div/div/input
+filter_parttier_title_locator = (//label)[6]
+filter_parttier_title = Part Tier
+filter_parttier_placeholder = Search Part Tier
+column_parttier = //tbody[contains(@class,'MuiTableBody-root')]/tr/td[position()=24]
+filterdata_parttier = Tier 2
+
+filter_region = (//div[contains(@class,'MuiPaper-root')]/div[contains(@class,'MuiBox-root')]/div[contains(@class,'MuiBox-root')][2]/div)[6]/div/div/div/input
+filter_region_title_locator = (//label)[7]
+filter_region_title = Region
+filter_region_placeholder = Search Region
+column_region = //tbody[contains(@class,'MuiTableBody-root')]/tr/td[position()=16]
+filterdata_region = 1
+
+filter_qtyoh = (//div[contains(@class,'MuiPaper-root')]/div[contains(@class,'MuiBox-root')]/div[contains(@class,'MuiBox-root')][2]/div)[7]/div/input
+filter_qtyoh_title_locator = (//label)[8]
+filter_qtyoh_title = QTY OH
+filter_qtyoh_placeholder = Enter QTY OH
+column_qtyoh = //tbody[contains(@class,'MuiTableBody-root')]/tr/td[position()=5]
+filterdata_qtyoh = 3
+
+filter_qtyreserved = (//div[contains(@class,'MuiPaper-root')]/div[contains(@class,'MuiBox-root')]/div[contains(@class,'MuiBox-root')][2]/div)[8]/div/input
+filter_qtyreserved_title_locator = (//label)[9]
+filter_qtyreserved_title = QTY Reserved
+filter_qtyreserved_placeholder = Enter QTY Reserved
+column_qtyreserved = //tbody[contains(@class,'MuiTableBody-root')]/tr/td[position()=6]
+filterdata_qtyreserved = LLP
+
+filter_qtysold = (//div[contains(@class,'MuiPaper-root')]/div[contains(@class,'MuiBox-root')]/div[contains(@class,'MuiBox-root')][2]/div)[9]/div/input
+filter_qtysold_title_locator = (//label)[10]
+filter_qtysold_title = QTY Sold
+filter_qtysold_placeholder = Enter QTY Sold
+column_qtysold = //tbody[contains(@class,'MuiTableBody-root')]/tr/td[position()=7]
+filterdata_qtysold = 2

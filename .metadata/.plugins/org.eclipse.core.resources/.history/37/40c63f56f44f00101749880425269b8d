@@ -1,0 +1,28 @@
+package chinmay;
+
+import org.testng.annotations.Test;
+import io.appium.java_client.AppiumBy;
+import java.io.IOException;
+import org.openqa.selenium.By;
+import automation.BaseMethods.Controls;
+
+public class CropSearch extends BaseTest
+{	
+	@Test
+	public void Search() throws InterruptedException, IOException
+	{
+		waitforelement(AppiumBy.xpath("//android.widget.Button[@content-desc='Continue']"), 10);
+		waitforelement(AppiumBy.xpath("//android.widget.ImageView[@content-desc='Are you\nBUYER ?']"), 10);
+		Thread.sleep(5000);
+		driver.findElement(AppiumBy.xpath("//android.view.View[@content-desc='Continue']")).click();
+		System.out.println("------Pressed Continue------");
+        waitforelement(By.id("com.android.permissioncontroller:id/permission_allow_foreground_only_button"), 10);
+		System.out.println("------Pressed GPS------");
+        waitforelement(By.xpath("//android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.Button"), 10);
+		System.out.println("------Pressed Text box------");
+//		WebElement menubar = driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().className('android.widget.Button').instance(0)"));
+		waitforelement(AppiumBy.xpath("//android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button"), 30);
+		driver.findElement(AppiumBy.xpath("//android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button")).click();
+		driver.findElement(AppiumBy.xpath("//android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button")).sendKeys("Potato");
+	}
+}

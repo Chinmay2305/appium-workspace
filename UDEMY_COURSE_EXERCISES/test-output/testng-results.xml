@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-20T11:13:30 IST" name="Default suite" finished-at="2025-05-20T11:13:51 IST" duration-ms="21489">
+    <groups>
+    </groups>
+    <test started-at="2025-05-20T11:13:30 IST" name="Default test" finished-at="2025-05-20T11:13:51 IST" duration-ms="21489">
+      <class name="chinmay.Section8_47_eCom_Validate_TotalAmount">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:chinmay.Section8_47_eCom_Validate_TotalAmount@38102d01]" started-at="2025-05-20T11:13:30 IST" name="configureAppium" finished-at="2025-05-20T11:13:38 IST" duration-ms="8397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAppium -->
+        <test-method signature="FillForm()[pri:0, instance:chinmay.Section8_47_eCom_Validate_TotalAmount@38102d01]" started-at="2025-05-20T11:13:38 IST" name="FillForm" finished-at="2025-05-20T11:13:51 IST" duration-ms="12916" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[Could not parse selector expression `new UiScrollable(new UiSelector()).scrollIntoView(xpath((//android.widget.TextView[@text='ADD TO CART'])[2]))`: `UiScrollable` doesn't have suitable method `scrollIntoView` with arguments [xpath((//android.widget.TextView[@text='ADD TO CART'])[2])]: Could not parse selector expression `new UiSelector().xpath((//android.widget.TextView[@text='ADD TO CART'])[2])`: UiSelector has no `xpath` method
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-28UNI6L', ip: '172.16.16.174', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [8d09edee-8120-45ec-9223-bdf072834407, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(xpath((//android.widget.TextView[@text='ADD TO CART'])[2]));}]
+Capabilities {appium:app: C:\Users\DELL\Downloads\Sof..., appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\DELL\Downloads\Sof..., automationName: UIAutomator2, deviceName: Pixel 3a API 32, platformName: android}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:viewportRect: {height: 2328, left: 0, top: 72, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: android}
+Session ID: 8d09edee-8120-45ec-9223-bdf072834407]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: Could not parse selector expression `new UiScrollable(new UiSelector()).scrollIntoView(xpath((//android.widget.TextView[@text='ADD TO CART'])[2]))`: `UiScrollable` doesn't have suitable method `scrollIntoView` with arguments [xpath((//android.widget.TextView[@text='ADD TO CART'])[2])]: Could not parse selector expression `new UiSelector().xpath((//android.widget.TextView[@text='ADD TO CART'])[2])`: UiSelector has no `xpath` method
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-28UNI6L', ip: '172.16.16.174', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [8d09edee-8120-45ec-9223-bdf072834407, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(xpath((//android.widget.TextView[@text='ADD TO CART'])[2]));}]
+Capabilities {appium:app: C:\Users\DELL\Downloads\Sof..., appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\DELL\Downloads\Sof..., automationName: UIAutomator2, deviceName: Pixel 3a API 32, platformName: android}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:viewportRect: {height: 2328, left: 0, top: 72, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: android}
+Session ID: 8d09edee-8120-45ec-9223-bdf072834407
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at chinmay.Section8_47_eCom_Validate_TotalAmount.FillForm(Section8_47_eCom_Validate_TotalAmount.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FillForm -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:chinmay.Section8_47_eCom_Validate_TotalAmount@38102d01]" started-at="2025-05-20T11:13:51 IST" name="teardown" finished-at="2025-05-20T11:13:51 IST" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- chinmay.Section8_47_eCom_Validate_TotalAmount -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

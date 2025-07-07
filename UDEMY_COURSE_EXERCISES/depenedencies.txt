@@ -1,0 +1,52 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< chinmay:FirstAppiumTest >-----------------------
+[INFO] Building FirstAppiumTest 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.7.0:tree (default-cli) @ FirstAppiumTest ---
+[INFO] chinmay:FirstAppiumTest:jar:0.0.1-SNAPSHOT
+[INFO] +- io.appium:java-client:jar:9.3.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-api:jar:4.27.0:compile
+[INFO] |  |  \- org.jspecify:jspecify:jar:1.0.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-remote-driver:jar:4.27.0:compile
+[INFO] |  |  +- com.google.auto.service:auto-service-annotations:jar:1.1.1:compile
+[INFO] |  |  +- com.google.guava:guava:jar:33.3.1-jre:compile
+[INFO] |  |  |  +- com.google.guava:failureaccess:jar:1.0.2:compile
+[INFO] |  |  |  +- com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile
+[INFO] |  |  |  +- com.google.code.findbugs:jsr305:jar:3.0.2:compile
+[INFO] |  |  |  +- org.checkerframework:checker-qual:jar:3.43.0:compile
+[INFO] |  |  |  \- com.google.j2objc:j2objc-annotations:jar:3.0.0:compile
+[INFO] |  |  +- io.opentelemetry.semconv:opentelemetry-semconv:jar:1.25.0-alpha:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-api:jar:1.44.1:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-context:jar:1.44.1:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-exporter-logging:jar:1.44.1:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-common:jar:1.44.1:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-extension-autoconfigure-spi:jar:1.44.1:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-extension-autoconfigure:jar:1.44.1:compile
+[INFO] |  |  |  \- io.opentelemetry:opentelemetry-api-incubator:jar:1.44.1-alpha:runtime
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-trace:jar:1.44.1:compile
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk:jar:1.44.1:compile
+[INFO] |  |  |  +- io.opentelemetry:opentelemetry-sdk-metrics:jar:1.44.1:compile
+[INFO] |  |  |  \- io.opentelemetry:opentelemetry-sdk-logs:jar:1.44.1:compile
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.15.10:compile
+[INFO] |  |  +- org.seleniumhq.selenium:selenium-http:jar:4.27.0:compile
+[INFO] |  |  |  \- dev.failsafe:failsafe:jar:3.3.2:compile
+[INFO] |  |  +- org.seleniumhq.selenium:selenium-json:jar:4.27.0:compile
+[INFO] |  |  +- org.seleniumhq.selenium:selenium-manager:jar:4.27.0:compile
+[INFO] |  |  \- org.seleniumhq.selenium:selenium-os:jar:4.27.0:compile
+[INFO] |  |     \- org.apache.commons:commons-exec:jar:1.4.0:compile
+[INFO] |  +- org.seleniumhq.selenium:selenium-support:jar:4.27.0:compile
+[INFO] |  +- com.google.code.gson:gson:jar:2.11.0:runtime
+[INFO] |  |  \- com.google.errorprone:error_prone_annotations:jar:2.27.0:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:2.0.13:compile
+[INFO] \- org.testng:testng:jar:7.10.2:compile
+[INFO]    +- com.beust:jcommander:jar:1.82:compile
+[INFO]    \- org.webjars:jquery:jar:3.7.1:runtime
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.772 s
+[INFO] Finished at: 2024-12-28T11:00:20+05:30
+[INFO] ------------------------------------------------------------------------
