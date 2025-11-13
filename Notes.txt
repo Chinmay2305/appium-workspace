@@ -1,0 +1,18 @@
+C:\Users\DELL\AppData\Local\Android\Sdk
+
+1. terminal - enter 'appium'
+2. Appium server gui - Advanced - enter details 127.0.0.1/4723 and /wd/hub and allow cors
+3. open android studio with device in it
+4. Appium Inspector - Enter all details including /wd/hub in remote path
+
+In case of error in Appium Inspector due to server instance already running, stop and restart Appium Server GUI
+
+In case of error in Eclipse due to server instance already running, run this in CMD:
+netstat -ano | findstr :4723
+taskkill /PID <PID> /F
+
+SAMPLE APKS to do testing
+https://github.com/appium-boneyard/sample-code/tree/master/sample-code/apps
+
+To know required device details for an unknown app, run following cmd in cmd prompt
+"C:\Users\DELL\Downloads\Softwares\android-sdk\build-tools\33.0.0\aapt.exe" dump badging "C:\Users\DELL\Downloads\Practice Apps\Calendar.apk"

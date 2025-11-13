@@ -45,18 +45,19 @@ public class FirstBAITest extends BaseTest
 		Thread.sleep(5000);
 		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
 		Thread.sleep(5000);
-		List<WebElement> textViews = driver.findElements(By.xpath("//android.widget.TextView[contains(@text, '"+search+"') and @package='com.bai.cmsapp' and @enabled='true' and @displayed='true']"));
+		List<WebElement> textViews = driver.findElements(AppiumBy.androidUIAutomator("new UISelector().textcontains(\""+search+"\")"));
 		for(WebElement e:textViews)
 		{
 			String elementText = e.getText();
-			if(elementText!=null && elementText.contains(search))
+			System.out.println("THIS IS THE ONE: "+elementText);
+	/*		if(elementText!=null && elementText.contains(search))
 			{
 				System.out.println("Match found: "+elementText);
 			}
 			else
 			{
 				System.out.println("No match for: "+elementText);
-			}
+			}*/
 		}
 		
 		

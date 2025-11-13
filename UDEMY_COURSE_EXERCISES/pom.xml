@@ -45,6 +45,11 @@
   </repositories>
     
   <dependencies>
+  <dependency>
+    		<groupId>io.github.bonigarcia</groupId>
+    		<artifactId>webdrivermanager</artifactId>
+    		<version>6.1.0</version> <!-- use latest -->
+		</dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>

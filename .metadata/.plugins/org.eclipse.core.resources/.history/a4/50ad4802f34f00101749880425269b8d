@@ -1,2 +1,0 @@
-analytics_url = https://qa.aerfinity.acumenaviation.in/analytics
-homevendors_link = (//ul[contains(@class,'MuiList-root')])[2]/li[7]

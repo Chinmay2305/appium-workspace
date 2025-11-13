@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BookMyCrop/BookMyCrop.iml" filepath="$PROJECT_DIR$/BookMyCrop/BookMyCrop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/appium-workspace.iml" filepath="$PROJECT_DIR$/.idea/appium-workspace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BAI/src/main/main.iml" filepath="$PROJECT_DIR$/BAI/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calculator/src/main/main2.iml" filepath="$PROJECT_DIR$/calculator/src/main/main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RottenTomatoes/src/main/main3.iml" filepath="$PROJECT_DIR$/RottenTomatoes/src/main/main3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/painchek/src/main/main4.iml" filepath="$PROJECT_DIR$/painchek/src/main/main4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UDEMY_COURSE_EXERCISES/src/main/main5.iml" filepath="$PROJECT_DIR$/UDEMY_COURSE_EXERCISES/src/main/main5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Appium/src/main/main6.iml" filepath="$PROJECT_DIR$/Appium/src/main/main6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GripNSip/src/main/main7.iml" filepath="$PROJECT_DIR$/GripNSip/src/main/main7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/painchek/target/target.iml" filepath="$PROJECT_DIR$/painchek/target/target.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RottenTomatoes/src/test/test.iml" filepath="$PROJECT_DIR$/RottenTomatoes/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calculator/src/test/test2.iml" filepath="$PROJECT_DIR$/calculator/src/test/test2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UDEMY_COURSE_EXERCISES/src/test/test3.iml" filepath="$PROJECT_DIR$/UDEMY_COURSE_EXERCISES/src/test/test3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GripNSip/src/test/test4.iml" filepath="$PROJECT_DIR$/GripNSip/src/test/test4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BAI/src/test/test5.iml" filepath="$PROJECT_DIR$/BAI/src/test/test5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/painchek/src/test/test6.iml" filepath="$PROJECT_DIR$/painchek/src/test/test6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Appium/src/test/test7.iml" filepath="$PROJECT_DIR$/Appium/src/test/test7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/udemy-practice/udemy-practice.iml" filepath="$PROJECT_DIR$/udemy-practice/udemy-practice.iml" />
+    </modules>
+  </component>
+</project>

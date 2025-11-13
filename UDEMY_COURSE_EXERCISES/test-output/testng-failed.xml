@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="chinmay.Section8_47_eCom_Validate_TotalAmount">
+      <class name="chinmay.Section7_39_Assignment">
         <methods>
-          <include name="FillForm"/>
           <include name="teardown"/>
+          <include name="Assignment"/>
           <include name="configureAppium"/>
         </methods>
-      </class> <!-- chinmay.Section8_47_eCom_Validate_TotalAmount -->
+      </class> <!-- chinmay.Section7_39_Assignment -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

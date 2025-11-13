@@ -1,3 +1,0 @@
-month_year_label = //div[contains(@class,'MuiPickersCalendarHeader-root')]/div[1]/div/div
-left_arrow = //div[contains(@class,'MuiPickersCalendarHeader-root')]/div[2]/button[1]
-right_arrow = //div[contains(@class,'MuiPickersCalendarHeader-root')]/div[2]/button[2]

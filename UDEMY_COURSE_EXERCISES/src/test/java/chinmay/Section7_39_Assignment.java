@@ -5,19 +5,15 @@ import java.io.File;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.google.common.collect.ImmutableMap;
-
 import java.net.MalformedURLException;
 import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebElement;
-
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -38,7 +34,7 @@ public class Section7_39_Assignment extends BaseTest
 		driver.findElement(AppiumBy.id("android:id/button2")).click();
 		Thread.sleep(2000);
 */		
-/*		//Fourth button to confirm the result on each text click - List Dialog
+		//Fourth button to confirm the result on each text click - List Dialog
 		driver.findElement(AppiumBy.id("io.appium.android.apis:id/select_button")).click();
 		Thread.sleep(2000);
 		
@@ -73,7 +69,7 @@ public class Section7_39_Assignment extends BaseTest
 
 		    Assert.assertEquals(actualMessage, expectedMessage, "Verification failed for Command " + commandnumber);			
 		}
-*/		
+		
 		
 		//Sixth button for radio button confirm - Single choice list
 		driver.findElement(AppiumBy.id("io.appium.android.apis:id/radio_button")).click();

@@ -25,7 +25,6 @@
     <fullyQualifiedTypeName name="org.testng.annotations.AfterSuite"/>
     <fullyQualifiedTypeName name="chinmay.ExtentReportUtil"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.DeviceRotation"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
     <fullyQualifiedTypeName name="com.bai.bai.App"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.interactions.PointerInput.Kind"/>
     <fullyQualifiedTypeName name="io.appium.java_client.TouchAction"/>
@@ -33,14 +32,12 @@
     <fullyQualifiedTypeName name="io.appium.java_client.touch.offset.PointOption"/>
     <fullyQualifiedTypeName name="io.appium.java_client.touch.WaitOptions"/>
     <fullyQualifiedTypeName name="groovy.lang.Sequence"/>
-    <fullyQualifiedTypeName name="java.time.Duration"/>
     <fullyQualifiedTypeName name="java.awt.Point"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.interactions.PointerInput"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.interactions.PointerInput.Origin"/>
     <fullyQualifiedTypeName name="java.util.Collection"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="org.testng.annotations.AfterClass"/>
-    <fullyQualifiedTypeName name="io.appium.java_client.AppiumBy"/>
     <fullyQualifiedTypeName name="org.testng.annotations.BeforeTest"/>
     <fullyQualifiedTypeName name="io.appium.java_client.android.AndroidDriver"/>
     <fullyQualifiedTypeName name="io.appium.java_client.android.nativekey.KeyEvent"/>
@@ -49,4 +46,12 @@
     <fullyQualifiedTypeName name="automation.BaseMethods.Controls"/>
     <fullyQualifiedTypeName name="testcase.painchek.Base"/>
     <fullyQualifiedTypeName name="chinmay.BaseTest"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
+    <fullyQualifiedTypeName name="java.time.Duration"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+    <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
+    <fullyQualifiedTypeName name="java.lang.Appendable"/>
+    <fullyQualifiedTypeName name="io.appium.java_client.AppiumBy"/>
 </qualifiedTypeNameHistroy>

@@ -13,6 +13,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.rmi.server.ServerCloneException;
 import java.time.Duration;
+import java.util.NoSuchElementException;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.openqa.selenium.By;
@@ -63,7 +64,7 @@ public class BaseTest
 		}
 		
 		DesiredCapabilities caps = new DesiredCapabilities();
-		caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Medium Phone API 35");
+		caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Redmi Note 8 API 31");
 		caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");
 		caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 100);
@@ -137,6 +138,19 @@ public class BaseTest
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(time));
 		WebElement element = w.until(ExpectedConditions.elementToBeClickable(locator));
 		element.click();
+	}
+	
+	public void dynamicwait(By by)
+	{
+		try
+		{
+			WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(800));
+			WebElement element=wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+		}
+		catch(NoSuchElementException e)
+		{
+			e.printStackTrace();
+		}
 	}
 	
 	public void longpressAction(WebElement element)

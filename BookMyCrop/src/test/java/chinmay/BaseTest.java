@@ -6,6 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
 import java.time.Duration;
+import java.util.NoSuchElementException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -13,6 +14,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.TouchAction;
@@ -48,7 +50,7 @@ public class BaseTest
 		}
 			
 		DesiredCapabilities caps = new DesiredCapabilities();
-		caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Redmi Note 8 API 31");
+		caps.setCapability(MobileCapabilityType.DEVICE_NAME, "LAVA LXX518 API 34");
 		caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");
 		caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 100);
@@ -71,6 +73,19 @@ public class BaseTest
 	public void longpressAction(WebElement element)
 	{
 		((JavascriptExecutor)driver).executeScript("mobile: longClickGesture", ImmutableMap.of("elementId",((RemoteWebElement)element).getId(),"duration",2000));
+	}
+	
+	public void dynamicwait(By by)
+	{
+		try
+		{
+			WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(800));
+			WebElement element=wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+		}
+		catch(NoSuchElementException e)
+		{
+			e.printStackTrace();
+		}
 	}
 	
 	public void scrollToEndAction()
@@ -121,5 +136,12 @@ public class BaseTest
 		bw.newLine();
 		bw.write("Time of result: "+java.time.LocalDateTime.now());
 		bw.close();
+	}
+	
+	@AfterClass
+	public void stop()
+	{
+		if(service!=null)
+			service.stop();
 	}
 }

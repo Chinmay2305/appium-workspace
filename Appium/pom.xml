@@ -39,9 +39,14 @@
 	</build>
 	<dependencies>
 		<dependency>
+    		<groupId>io.github.bonigarcia</groupId>
+    		<artifactId>webdrivermanager</artifactId>
+    		<version>6.1.0</version> <!-- use latest -->
+		</dependency>
+		<dependency>
 			<groupId>io.appium</groupId>
 			<artifactId>java-client</artifactId>
-			<version>7.3.0</version>
+			<version>8.5.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.testng</groupId>

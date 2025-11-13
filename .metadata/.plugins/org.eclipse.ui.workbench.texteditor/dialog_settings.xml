@@ -3,24 +3,28 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<section name="java.lang.Class">
 		<item key="replaceBarOpen" value="false"/>
-		<item key="selection" value="Match"/>
+		<item key="selection" value="Pressed"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="match"/>
-			<item value="io.app"/>
-			<item value="io.a["/>
-			<item value="org.sele"/>
-			<item value="avent"/>
-			<item value="com.av"/>
-			<item value="org.test"/>
-			<item value="teard"/>
-			<item value="spring"/>
-			<item value="common"/>
-			<item value="exten"/>
+			<item value="lava"/>
+			<item value="waitfor"/>
+			<item value="mobilecapa"/>
+			<item value="mobilecal"/>
+			<item value="painc"/>
+			<item value="9.2."/>
+			<item value="java-clie"/>
+			<item value="java-"/>
+			<item value="java-clien"/>
+			<item value="Pressed"/>
+			<item value="Pressed GPS"/>
+			<item value="pressed gps"/>
+			<item value="pressed"/>
+			<item value="dyn"/>
+			<item value="wait"/>
 		</list>
 		<list key="replacehistory">
 		</list>

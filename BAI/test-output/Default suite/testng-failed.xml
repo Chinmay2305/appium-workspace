@@ -6,8 +6,8 @@
       <class name="com.bai.bai.FirstBAITest">
         <methods>
           <include name="clearClipboard"/>
-          <include name="stop"/>
           <include name="Search"/>
+          <include name="stop"/>
           <include name="configureAppium"/>
         </methods>
       </class> <!-- com.bai.bai.FirstBAITest -->

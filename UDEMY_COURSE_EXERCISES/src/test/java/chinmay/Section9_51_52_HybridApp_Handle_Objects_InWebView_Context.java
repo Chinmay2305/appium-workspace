@@ -11,7 +11,6 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
-
 import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.Keys;
@@ -24,9 +23,19 @@ import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.android.nativekey.*;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Section9_51_52_HybridApp_Handle_Objects_InWebView_Context extends BaseTest_eCom
 {
+	@Test
+	public static void setupChromedriver()
+	{
+        // This downloads the latest compatible chromedriver to a known location
+        WebDriverManager.chromedriver().setup();
+        String chromeDriverPath = WebDriverManager.chromedriver().getDownloadedDriverPath();
+        System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+    }
+	
 	@Test
 	public void FillForm() throws InterruptedException, MalformedURLException, URISyntaxException
 	{		
@@ -84,26 +93,9 @@ public class Section9_51_52_HybridApp_Handle_Objects_InWebView_Context extends B
 			System.out.println(contextName);
 		}
 		driver.context("WEBVIEW_com.androidsample.generalstore");
-		
-		UiAutomator2Options options = new UiAutomator2Options();
-		options.setDeviceName("Pixel 3a API 32");
-		options.setCapability("browserName", "Chrome");
-		options.setChromedriverExecutable("C:\\Users\\DELL\\Downloads\\Softwares\\chromedriver-win64\\chromedriver.exe");
-		driver = new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(), options);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.get("http://www.google.com");
 		driver.findElement(By.name("q")).sendKeys("Chinmay Agrawal");
 		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 		driver.context("NATIVE_APP");
-		
-		
-/*		URL appiumserverURL = new URL("http://127.0.0.1:4723/wd/hub");
-		AndroidDriver driver = new AndroidDriver(appiumserverURL, caps);
-		//Now i am in browser
-		driver.findElement(By.name("q")).sendKeys("Chinmay Agrawal");
-		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-*/		
-//		teardown();
 	}
 }

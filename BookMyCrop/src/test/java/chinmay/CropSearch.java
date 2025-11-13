@@ -2,10 +2,17 @@ package chinmay;
 
 import org.testng.annotations.Test;
 import io.appium.java_client.AppiumBy;
-import testcase.painchek.Base;
-
 import java.io.IOException;
+import java.time.Duration;
+import java.util.List;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 public class CropSearch extends BaseTest
 {	
@@ -19,11 +26,30 @@ public class CropSearch extends BaseTest
 		System.out.println("------Pressed Continue------");
         waitforelement(By.id("com.android.permissioncontroller:id/permission_allow_foreground_only_button"), 10);
 		System.out.println("------Pressed GPS------");
-        waitforelement(By.xpath("//android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.Button"), 10);
-		System.out.println("------Pressed Text box------");
-//		WebElement menubar = driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().className('android.widget.Button').instance(0)"));
-		waitforelement(AppiumBy.xpath("//android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button"), 30);
-		driver.findElement(AppiumBy.xpath("//android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button")).click();
-		driver.findElement(AppiumBy.xpath("//android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button")).sendKeys("Potato");
+		
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(20));
+		w.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//android.view.View[@content-desc='loading...']/android.view.View/android.view.View")));
+		waitforelement(By.xpath("//android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.Button"), 60);
+		
+		String keyword = "Potato";
+		
+		driver.findElement(By.xpath("//android.widget.EditText")).sendKeys(keyword);
+		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
+		
+		By resultslocator = By.xpath("//android.view.View[contains(@content-desc, '" + keyword + "')]");
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(resultslocator));
+		List<WebElement> results = driver.findElements(resultslocator);
+		System.out.println(results.size());
+		for(WebElement el:results)
+		{
+			System.out.println(el.getAttribute("content-desc"));
+		}
+	}
+	
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		super.stop();
 	}
 }
