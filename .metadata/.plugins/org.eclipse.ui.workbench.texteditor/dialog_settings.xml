@@ -10,6 +10,13 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="/"/>
+			<item value="expectedres"/>
+			<item value="expected"/>
+			<item value="repor"/>
+			<item value="redmi"/>
+			<item value="apk"/>
+			<item value="create"/>
 			<item value="lava"/>
 			<item value="waitfor"/>
 			<item value="mobilecapa"/>
@@ -18,13 +25,6 @@
 			<item value="9.2."/>
 			<item value="java-clie"/>
 			<item value="java-"/>
-			<item value="java-clien"/>
-			<item value="Pressed"/>
-			<item value="Pressed GPS"/>
-			<item value="pressed gps"/>
-			<item value="pressed"/>
-			<item value="dyn"/>
-			<item value="wait"/>
 		</list>
 		<list key="replacehistory">
 		</list>

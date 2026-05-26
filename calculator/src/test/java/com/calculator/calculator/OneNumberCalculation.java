@@ -1,23 +1,10 @@
 package com.calculator.calculator;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import io.appium.java_client.AppiumBy;
-import io.appium.java_client.TouchAction;
-import io.appium.java_client.service.local.AppiumServiceBuilder;
-import io.appium.java_client.touch.offset.PointOption;
-
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class OneNumberCalculation extends BaseTest
 {
@@ -26,8 +13,8 @@ public class OneNumberCalculation extends BaseTest
 	{
 		driver.findElement(AppiumBy.className("android.widget.Button")).click();
 		WebElement editText = driver.findElement(AppiumBy.className("android.widget.EditText"));
-		int n = 23;
-		String operation = "\u221A";
+		int n = 30;
+		String operation = "sin";
 		//"\u221A" - sqrt
 		
 		if(n>9)

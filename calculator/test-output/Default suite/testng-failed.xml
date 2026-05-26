@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.calculator.calculator.OneNumberCalculation">
+      <class name="com.calculator.calculator.TwoNumberCalculation">
         <methods>
           <include name="configureAppium"/>
-          <include name="Calculate"/>
+          <include name="Search"/>
         </methods>
-      </class> <!-- com.calculator.calculator.OneNumberCalculation -->
+      </class> <!-- com.calculator.calculator.TwoNumberCalculation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -53,19 +53,16 @@ public class BaseTest
 			System.out.println("Failed to start server");
 		}
 		
-		DesiredCapabilities caps = new DesiredCapabilities();
-		caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Redmi Note 8 API 31");
-		caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");
-		caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-		caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 100);
-
-				
 		UiAutomator2Options options = new UiAutomator2Options()
-				.setDeviceName("Redmi Note 8 API 31")
-				.setPlatformName("Android")
-				.setApp("C:\\Users\\DELL\\Downloads\\Softwares\\appium-workspace\\calculator\\src\\test\\java\\resources\\Calculator_buttons.apk");
+                .setDeviceName("Redmi Note 8 API 34")   // must match emulator name
+                .setPlatformName("Android")
+                .setAutomationName("UIAutomator2")
+                .setApp(
+                        "C:\\Users\\DELL\\Downloads\\Softwares\\appium-workspace\\calculator\\src\\test\\java\\resources\\Calculator_buttons.apk"
+                )
+                .setNewCommandTimeout(Duration.ofSeconds(120));
 
-		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"), options);
+		driver = new AndroidDriver(service.getUrl(), options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	

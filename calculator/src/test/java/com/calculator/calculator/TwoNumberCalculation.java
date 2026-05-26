@@ -93,6 +93,7 @@ public class TwoNumberCalculation extends BaseTest
 	             {
 	            	 System.out.println("Division by 0 not allowed");
 	             }
+	             break;
 	         case "%":
 	        	 actualanswer = (double) (n1*n2)/100;
 	        	 break;
