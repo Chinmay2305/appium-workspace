@@ -33,7 +33,9 @@ public class BaseTest {
                 .build();
         service.start();
         UiAutomator2Options options = new UiAutomator2Options();
-        options.setDeviceName("LAVA LXX518 API 36.0");
+        //options.setDeviceName("LAVA LXX518 API 36.0");
+        //options.setDeviceName("Pixel 10 Pro XL API 36.1");
+        options.setDeviceName("Pixel 9 API 36.0");
         options.setPlatformName("Android");
         options.setAutomationName("UIAutomator2");
         options.setAutoGrantPermissions(true);

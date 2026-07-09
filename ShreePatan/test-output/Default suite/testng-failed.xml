@@ -9,7 +9,6 @@
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="verifySpacesNotAllowed"/>
-          <include name="unregisteredMobileNumber"/>
         </methods>
       </class> <!-- tests.LoginTest -->
     </classes>

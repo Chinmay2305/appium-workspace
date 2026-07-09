@@ -98,6 +98,11 @@ test-output/ExtentReport.html
 - Appium Server
 - Android SDK
 - Android Emulator or Real Device
+- **P.S. Note**: This is a split apk (not a debug or universal one) so, follow these steps:
+	1. Launch the desired emulator
+		2. Change the name of emulator in the code
+		3. Then install it using ADB: adb install-multiple base.apk config.en.apk config.mdpi.apk config.arm64_v8a.apk
+		4. Now Appium code will work
 
 ---
 

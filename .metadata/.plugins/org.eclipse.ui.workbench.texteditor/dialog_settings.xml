@@ -10,6 +10,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="lava"/>
 			<item value="space"/>
 			<item value="login"/>
 			<item value="test"/>
@@ -24,7 +25,6 @@
 			<item value="splash"/>
 			<item value="c:"/>
 			<item value="C"/>
-			<item value="C:\Users\Quality Analyst 3\src\test\resources\"/>
 		</list>
 		<list key="replacehistory">
 		</list>
