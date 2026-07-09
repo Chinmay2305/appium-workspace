@@ -10,21 +10,21 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="/"/>
-			<item value="expectedres"/>
-			<item value="expected"/>
-			<item value="repor"/>
-			<item value="redmi"/>
-			<item value="apk"/>
-			<item value="create"/>
-			<item value="lava"/>
-			<item value="waitfor"/>
-			<item value="mobilecapa"/>
-			<item value="mobilecal"/>
-			<item value="painc"/>
-			<item value="9.2."/>
-			<item value="java-clie"/>
-			<item value="java-"/>
+			<item value="space"/>
+			<item value="login"/>
+			<item value="test"/>
+			<item value="appwai"/>
+			<item value="appwait"/>
+			<item value="extent"/>
+			<item value="extentre"/>
+			<item value="calcula"/>
+			<item value="scroll"/>
+			<item value="stopser"/>
+			<item value="addcon"/>
+			<item value="splash"/>
+			<item value="c:"/>
+			<item value="C"/>
+			<item value="C:\Users\Quality Analyst 3\src\test\resources\"/>
 		</list>
 		<list key="replacehistory">
 		</list>

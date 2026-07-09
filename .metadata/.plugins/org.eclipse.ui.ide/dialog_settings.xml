@@ -15,6 +15,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\Quality Analyst 3\Downloads\Softwares\appium-workspace"/>
 			<item value="C:\Users\DELL\Downloads\Softwares\appium-workspace"/>
 			<item value="C:\Users\DELL\Downloads\Softwares\appium-workspace\BAI"/>
 		</list>
@@ -23,9 +24,9 @@
 		</list>
 		<section name="ExternalProjectImportWizard.dialogBounds">
 			<item key="DIALOG_X_ORIGIN" value="619"/>
-			<item key="DIALOG_Y_ORIGIN" value="107"/>
+			<item key="DIALOG_Y_ORIGIN" value="101"/>
 			<item key="DIALOG_WIDTH" value="700"/>
-			<item key="DIALOG_HEIGHT" value="716"/>
+			<item key="DIALOG_HEIGHT" value="722"/>
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 		</section>
 	</section>

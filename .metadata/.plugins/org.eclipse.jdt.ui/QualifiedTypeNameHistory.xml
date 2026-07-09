@@ -53,5 +53,8 @@
     <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
     <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
     <fullyQualifiedTypeName name="java.lang.Appendable"/>
+    <fullyQualifiedTypeName name="FirstContacts.FirstContacts.BaseTest"/>
+    <fullyQualifiedTypeName name="pages.ContactPage"/>
     <fullyQualifiedTypeName name="io.appium.java_client.AppiumBy"/>
+    <fullyQualifiedTypeName name="shreepatan.shreepatan.BaseTest"/>
 </qualifiedTypeNameHistroy>

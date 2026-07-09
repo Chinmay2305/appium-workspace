@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Quality Analyst 3\Downloads\Softwares\appium-workspace"/>
+			<item value="C:\Users\Quality Analyst 3\Downloads\Softwares\appium-workspace\FirstContacts"/>
 			<item value="C:\Users\DELL\Downloads\Softwares\appium-workspace"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -45,14 +47,12 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.studentsofcanada"/>
-			<item value="StudentsofCanada"/>
+			<item value="ShreePatan"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="studentsofcanada"/>
-			<item value="StudentsofCanada"/>
+			<item value="ShreePatan"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

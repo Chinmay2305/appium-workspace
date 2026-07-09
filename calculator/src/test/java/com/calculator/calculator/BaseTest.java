@@ -40,7 +40,7 @@ public class BaseTest
 	public void configureAppium() throws IOException, MalformedURLException, InterruptedException
 	{
 		//Code to start server
-		service = new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\DELL\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
+		service = new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\Quality Analyst 3\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
 						.withIPAddress("127.0.0.1").usingPort(4723).build();
 		service.start();
 		
@@ -54,11 +54,11 @@ public class BaseTest
 		}
 		
 		UiAutomator2Options options = new UiAutomator2Options()
-                .setDeviceName("Redmi Note 8 API 34")   // must match emulator name
+                .setDeviceName("LAVA LXX518 API 36.0")   // must match emulator name
                 .setPlatformName("Android")
                 .setAutomationName("UIAutomator2")
                 .setApp(
-                        "C:\\Users\\DELL\\Downloads\\Softwares\\appium-workspace\\calculator\\src\\test\\java\\resources\\Calculator_buttons.apk"
+                        "C:\\Users\\Quality Analyst 3\\Downloads\\Softwares\\appium-workspace\\calculator\\src\\test\\java\\resources\\Calculator_buttons.apk"
                 )
                 .setNewCommandTimeout(Duration.ofSeconds(120));
 

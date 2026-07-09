@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 08 10:57:25 IST 2026</td>
+<td>Started on:</td><td>Mon Jul 06 18:08:11 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>21 seconds (21027 ms)</td>
+<tr><td>Total time:</td><td>3 seconds (3677 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,119 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.calculator.calculator.TwoNumberCalculation.configureAppium()'><b>configureAppium</b><br>Test class: com.calculator.calculator.TwoNumberCalculation</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Error executing adbExec. Original error: &apos;Command &apos;&apos;C:\Users\Quality Analyst 3\AppData\Local\Android\Sdk\platform-tools\adb.exe&apos; -P 5037 -s emulator-5554 shell &apos;settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy&apos;&apos; exited with code 224&apos;; Command output: cmd: Failure calling service settings: Broken pipe (32)
+cmd: Failure calling service settings: Broken pipe (32)
+cmd: Failure calling service settings: Broken pipe (32)
+ 
+Host info: host: &apos;DESKTOP-U8O7OSH&apos;, ip: &apos;192.168.68.106&apos;
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=120, appium:deviceName=LAVA LXX518 API 36.0, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=C:\Users\Quality Analyst 3\Downloads\Softwares\appium-workspace\calculator\src\test\java\resources\Calculator_buttons.apk}], desiredCapabilities=Capabilities {appium:app: C:\Users\Quality Analyst 3\..., appium:automationName: UIAutomator2, appium:deviceName: LAVA LXX518 API 36.0, appium:newCommandTimeout: 120, platformName: ANDROID}}]
+Capabilities {appium:app: C:\Users\Quality Analyst 3\..., appium:automationName: UIAutomator2, appium:deviceName: LAVA LXX518 API 36.0, appium:newCommandTimeout: 120, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:159)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at com.calculator.calculator.BaseTest.configureAppium(BaseTest.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1944978632", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1944978632'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Error executing adbExec. Original error: &apos;Command &apos;&apos;C:\Users\Quality Analyst 3\AppData\Local\Android\Sdk\platform-tools\adb.exe&apos; -P 5037 -s emulator-5554 shell &apos;settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy&apos;&apos; exited with code 224&apos;; Command output: cmd: Failure calling service settings: Broken pipe (32)
+cmd: Failure calling service settings: Broken pipe (32)
+cmd: Failure calling service settings: Broken pipe (32)
+ 
+Host info: host: &apos;DESKTOP-U8O7OSH&apos;, ip: &apos;192.168.68.106&apos;
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=120, appium:deviceName=LAVA LXX518 API 36.0, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=C:\Users\Quality Analyst 3\Downloads\Softwares\appium-workspace\calculator\src\test\java\resources\Calculator_buttons.apk}], desiredCapabilities=Capabilities {appium:app: C:\Users\Quality Analyst 3\..., appium:automationName: UIAutomator2, appium:deviceName: LAVA LXX518 API 36.0, appium:newCommandTimeout: 120, platformName: ANDROID}}]
+Capabilities {appium:app: C:\Users\Quality Analyst 3\..., appium:automationName: UIAutomator2, appium:deviceName: LAVA LXX518 API 36.0, appium:newCommandTimeout: 120, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:159)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at com.calculator.calculator.BaseTest.configureAppium(BaseTest.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>com.calculator.calculator.TwoNumberCalculation@6c40365c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -77,9 +188,106 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.calculator.calculator.TwoNumberCalculation.Search()'><b>Search</b><br>Test class: com.calculator.calculator.TwoNumberCalculation</td>
-<td></td>
-<td>13</td>
-<td>com.calculator.calculator.TwoNumberCalculation@117e949d</td></tr>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Error executing adbExec. Original error: &apos;Command &apos;&apos;C:\Users\Quality Analyst 3\AppData\Local\Android\Sdk\platform-tools\adb.exe&apos; -P 5037 -s emulator-5554 shell &apos;settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy&apos;&apos; exited with code 224&apos;; Command output: cmd: Failure calling service settings: Broken pipe (32)
+cmd: Failure calling service settings: Broken pipe (32)
+cmd: Failure calling service settings: Broken pipe (32)
+ 
+Host info: host: &apos;DESKTOP-U8O7OSH&apos;, ip: &apos;192.168.68.106&apos;
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=120, appium:deviceName=LAVA LXX518 API 36.0, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=C:\Users\Quality Analyst 3\Downloads\Softwares\appium-workspace\calculator\src\test\java\resources\Calculator_buttons.apk}], desiredCapabilities=Capabilities {appium:app: C:\Users\Quality Analyst 3\..., appium:automationName: UIAutomator2, appium:deviceName: LAVA LXX518 API 36.0, appium:newCommandTimeout: 120, platformName: ANDROID}}]
+Capabilities {appium:app: C:\Users\Quality Analyst 3\..., appium:automationName: UIAutomator2, appium:deviceName: LAVA LXX518 API 36.0, appium:newCommandTimeout: 120, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:159)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at com.calculator.calculator.BaseTest.configureAppium(BaseTest.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace824900551", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace824900551'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Error executing adbExec. Original error: &apos;Command &apos;&apos;C:\Users\Quality Analyst 3\AppData\Local\Android\Sdk\platform-tools\adb.exe&apos; -P 5037 -s emulator-5554 shell &apos;settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy&apos;&apos; exited with code 224&apos;; Command output: cmd: Failure calling service settings: Broken pipe (32)
+cmd: Failure calling service settings: Broken pipe (32)
+cmd: Failure calling service settings: Broken pipe (32)
+ 
+Host info: host: &apos;DESKTOP-U8O7OSH&apos;, ip: &apos;192.168.68.106&apos;
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=120, appium:deviceName=LAVA LXX518 API 36.0, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=C:\Users\Quality Analyst 3\Downloads\Softwares\appium-workspace\calculator\src\test\java\resources\Calculator_buttons.apk}], desiredCapabilities=Capabilities {appium:app: C:\Users\Quality Analyst 3\..., appium:automationName: UIAutomator2, appium:deviceName: LAVA LXX518 API 36.0, appium:newCommandTimeout: 120, platformName: ANDROID}}]
+Capabilities {appium:app: C:\Users\Quality Analyst 3\..., appium:automationName: UIAutomator2, appium:deviceName: LAVA LXX518 API 36.0, appium:newCommandTimeout: 120, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:159)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at com.calculator.calculator.BaseTest.configureAppium(BaseTest.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.calculator.calculator.TwoNumberCalculation@6c40365c</td></tr>
 </table><p>
 </body>
 </html>

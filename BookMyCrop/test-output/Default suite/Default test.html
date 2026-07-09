@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 08 10:40:37 IST 2026</td>
+<td>Started on:</td><td>Mon Jul 06 13:15:06 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>87 seconds (87380 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (102 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,27 +76,23 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='chinmay.CropSearch.Search()'><b>Search</b><br>Test class: chinmay.CropSearch</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[contains(@content-desc, &apos;Potato&apos;)] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appium:app: C:\Users\DELL\Downloads\Pra..., appium:appActivity: com.bookmycrop.farmerapp.Ma..., appium:appPackage: com.bookmycrop.farmerapp, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\DELL\Downloads\Pra..., automationName: UIAutomator2, deviceName: Redmi Note 8 API 31, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:viewportRect: {height: 2328, left: 0, top: 72, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 87be9d21-457f-4df3-8752-c10aef8c054d
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at chinmay.CropSearch.Search(CropSearch.java:41)
+<td title='chinmay.CropSearch.configureAppium()'><b>configureAppium</b><br>Test class: chinmay.CropSearch</td>
+<td><div><pre>io.appium.java_client.service.local.InvalidServerInstanceException: The main Appium script does not exist at &apos;C:\Users\DELL\AppData\Roaming\npm\node_modules\appium\build\lib\main.js&apos;
+	at io.appium.java_client.service.local.AppiumServiceBuilder.validatePath(AppiumServiceBuilder.java:129)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.loadPathToMainScript(AppiumServiceBuilder.java:293)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:360)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:57)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:490)
+	at chinmay.BaseTest.configureAppium(BaseTest.java:40)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at org.testng.TestRunner.privateRun(TestRunner.java:739)
 	at org.testng.TestRunner.run(TestRunner.java:614)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -112,27 +108,23 @@ Session ID: 87be9d21-457f-4df3-8752-c10aef8c054d
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace794563378", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace794563378'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[contains(@content-desc, &apos;Potato&apos;)] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appium:app: C:\Users\DELL\Downloads\Pra..., appium:appActivity: com.bookmycrop.farmerapp.Ma..., appium:appPackage: com.bookmycrop.farmerapp, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\DELL\Downloads\Pra..., automationName: UIAutomator2, deviceName: Redmi Note 8 API 31, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:viewportRect: {height: 2328, left: 0, top: 72, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 87be9d21-457f-4df3-8752-c10aef8c054d
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at chinmay.CropSearch.Search(CropSearch.java:41)
+</pre></div><a href='#' onClick='toggleBox("stack-trace980138431", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace980138431'><pre>io.appium.java_client.service.local.InvalidServerInstanceException: The main Appium script does not exist at &apos;C:\Users\DELL\AppData\Roaming\npm\node_modules\appium\build\lib\main.js&apos;
+	at io.appium.java_client.service.local.AppiumServiceBuilder.validatePath(AppiumServiceBuilder.java:129)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.loadPathToMainScript(AppiumServiceBuilder.java:293)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:360)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:57)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:490)
+	at chinmay.BaseTest.configureAppium(BaseTest.java:40)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at org.testng.TestRunner.privateRun(TestRunner.java:739)
 	at org.testng.TestRunner.run(TestRunner.java:614)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -149,8 +141,85 @@ Session ID: 87be9d21-457f-4df3-8752-c10aef8c054d
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>53</td>
-<td>chinmay.CropSearch@15ca7889</td></tr>
+<td>0</td>
+<td>chinmay.CropSearch@23348b5d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='chinmay.CropSearch.Search()'><b>Search</b><br>Test class: chinmay.CropSearch</td>
+<td><div><pre>io.appium.java_client.service.local.InvalidServerInstanceException: The main Appium script does not exist at &apos;C:\Users\DELL\AppData\Roaming\npm\node_modules\appium\build\lib\main.js&apos;
+	at io.appium.java_client.service.local.AppiumServiceBuilder.validatePath(AppiumServiceBuilder.java:129)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.loadPathToMainScript(AppiumServiceBuilder.java:293)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:360)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:57)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:490)
+	at chinmay.BaseTest.configureAppium(BaseTest.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace510276116", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace510276116'><pre>io.appium.java_client.service.local.InvalidServerInstanceException: The main Appium script does not exist at &apos;C:\Users\DELL\AppData\Roaming\npm\node_modules\appium\build\lib\main.js&apos;
+	at io.appium.java_client.service.local.AppiumServiceBuilder.validatePath(AppiumServiceBuilder.java:129)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.loadPathToMainScript(AppiumServiceBuilder.java:293)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:360)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:57)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:490)
+	at chinmay.BaseTest.configureAppium(BaseTest.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>chinmay.CropSearch@23348b5d</td></tr>
 </table><p>
 </body>
 </html>

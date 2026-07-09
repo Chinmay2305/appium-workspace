@@ -36,7 +36,7 @@ public class BaseTest
 	public void configureAppium() throws IOException
 	{
 		//Code to start server
-		service = new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\DELL\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
+		service = new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\Quality Analyst 3\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
 				.withIPAddress("127.0.0.1").usingPort(4723).build();
 		service.start();
 	
@@ -50,14 +50,14 @@ public class BaseTest
 		}
 			
 		DesiredCapabilities caps = new DesiredCapabilities();
-		caps.setCapability(MobileCapabilityType.DEVICE_NAME, "LAVA LXX518 API 34");
+		caps.setCapability(MobileCapabilityType.DEVICE_NAME, "LAVA LXX518 API 36.0");
 		caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");
 		caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 100);
 
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("Redmi Note 8 API 31");
-		options.setApp("C:\\Users\\DELL\\Downloads\\Practice Apps\\Book My Crop.apk");
+		options.setApp("C:\\Users\\Quality Analyst 3\\Downloads\\Practice Apps\\Book My Crop.apk");
 		
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"), options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -120,7 +120,7 @@ public class BaseTest
 	}
 	public void createFile(String expectedresult, String actualresult, String statement) throws IOException
 	{
-		File f = new File("C:\\Users\\DELL\\OneDrive\\Desktop\\TestResult.txt");
+		File f = new File("C:\\Users\\Quality Analyst 3\\OneDrive\\Desktop\\TestResult.txt");
 		if(!f.exists())
 		{
 			f.createNewFile();
