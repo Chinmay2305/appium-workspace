@@ -103,7 +103,7 @@ test-output/ExtentReport.html
 - **P.S. Note**: This is a split apk (not a debug or universal one) so, follow these steps for installation:
 	1. Launch the desired emulator in android studio
 		2. Change the name of emulator in the eclipse code
-		3. In CMD from app location [here: \ShreePatan\src\test\java\resources], install using ADB: adb install-multiple base.apk config.en.apk config.mdpi.apk config.arm64_v8a.apk
+		3. In CMD from app location [here: \ShreePatan\src\test\java\resources], install using ADB: adb install-multiple app.patan.jainmandal.shree_patan_jain_mandal.apk config.en.apk config.mdpi.apk config.arm64_v8a.apk
 		4. Now Appium code will work
 
 ---

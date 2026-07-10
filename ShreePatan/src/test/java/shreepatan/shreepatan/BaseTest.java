@@ -26,7 +26,7 @@ public class BaseTest {
     @BeforeClass
     public void setUp() throws MalformedURLException
     {
-    	String device = "LAVA LXX518 API 36.0"; //Mention your desired device here
+    	String device = "Pixel 9 API 36.0"; //Mention your desired device here
     	/*Sample devices I tested on:
     	 * Pixel 10 Pro XL API 36.1
     	 * LAVA LXX518 API 36.0
