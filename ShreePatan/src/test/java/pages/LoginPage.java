@@ -116,8 +116,18 @@ public class LoginPage
     
     public void verifyToast(String expected)
     {
-        String actual = getToastMessage();
-        Assert.assertEquals(actual, expected);
-        BaseTest.test.pass("Verified Toast : " + actual);
+    	String actual = getToastMessage();
+
+        try
+        {
+            Assert.assertEquals(actual, expected);
+            BaseTest.test.pass("Verified Toast : " + actual);
+        }
+        catch (AssertionError e)
+        {
+            BaseTest.test.fail("Expected : " + expected);
+            BaseTest.test.fail("Actual : " + actual);
+            throw e;
+        }
     }
 }

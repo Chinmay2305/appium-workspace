@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Quality Analyst 3\AppData\Local\Temp\testng-eclipse-994609876\testng-customsuite.xml</span>
+                    <span>C:\Users\Quality Analyst 3\AppData\Local\Temp\testng-eclipse--1581832457\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
+                    <span class="method-stats">9 methods, 2 failed,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
                     <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="unregisteredMobileNumber">unregisteredMobileNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifySpacesNotAllowed">verifySpacesNotAllowed</a> <!-- method navigator-link -->
@@ -133,11 +138,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginPage">loginPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="unregisteredMobileNumber">unregisteredMobileNumber</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -175,6 +175,50 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="unregisteredMobileNumber">
+                  </a> <!-- unregisteredMobileNumber -->
+                  <span class="method-name">unregisteredMobileNumber</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Please Enter Valid Contact Number] but found [User not exist]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at pages.LoginPage.verifyToast(LoginPage.java:123)
+	at tests.LoginTest.unregisteredMobileNumber(LoginTest.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verifySpacesNotAllowed">
                   </a> <!-- verifySpacesNotAllowed -->
                   <span class="method-name">verifySpacesNotAllowed</span>
@@ -185,7 +229,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
-	at pages.LoginPage.verifyToast(LoginPage.java:120)
+	at pages.LoginPage.verifyToast(LoginPage.java:123)
 	at tests.LoginTest.verifySpacesNotAllowed(LoginTest.java:119)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -255,13 +299,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="unregisteredMobileNumber">
-                  </a> <!-- unregisteredMobileNumber -->
-                  <span class="method-name">unregisteredMobileNumber</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifyAlphabetNotAllowed">
                   </a> <!-- verifyAlphabetNotAllowed -->
                   <span class="method-name">verifyAlphabetNotAllowed</span>
@@ -286,7 +323,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Quality Analyst 3\AppData\Local\Temp\testng-eclipse-994609876\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Quality Analyst 3\AppData\Local\Temp\testng-eclipse--1581832457\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -339,44 +376,44 @@ data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginPage')
 data.setCell(0, 2, 'tests.LoginTest')
-data.setCell(0, 3, 20463);
+data.setCell(0, 3, 20525);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'unregisteredMobileNumber')
+data.setCell(1, 1, 'invalidMobileFormat')
 data.setCell(1, 2, 'tests.LoginTest')
-data.setCell(1, 3, 3954);
+data.setCell(1, 3, 3663);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'invalidDigits')
+data.setCell(2, 1, 'unregisteredMobileNumber')
 data.setCell(2, 2, 'tests.LoginTest')
-data.setCell(2, 3, 3666);
+data.setCell(2, 3, 3559);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifySpacesNotAllowed')
+data.setCell(3, 1, 'invalidDigits')
 data.setCell(3, 2, 'tests.LoginTest')
-data.setCell(3, 3, 3576);
+data.setCell(3, 3, 3539);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'emptyLogin')
+data.setCell(4, 1, 'verifySpacesNotAllowed')
 data.setCell(4, 2, 'tests.LoginTest')
-data.setCell(4, 3, 3471);
+data.setCell(4, 3, 3072);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'invalidMobileFormat')
+data.setCell(5, 1, 'verifyAlphabetNotAllowed')
 data.setCell(5, 2, 'tests.LoginTest')
-data.setCell(5, 3, 2995);
+data.setCell(5, 3, 3036);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyAlphabetNotAllowed')
+data.setCell(6, 1, 'emptyLogin')
 data.setCell(6, 2, 'tests.LoginTest')
-data.setCell(6, 3, 2977);
+data.setCell(6, 3, 2933);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyMaximumTenDigits')
+data.setCell(7, 1, 'verifySpecialCharactersNotAllowed')
 data.setCell(7, 2, 'tests.LoginTest')
-data.setCell(7, 3, 2756);
+data.setCell(7, 3, 2636);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifySpecialCharactersNotAllowed')
+data.setCell(8, 1, 'verifyMaximumTenDigits')
 data.setCell(8, 2, 'tests.LoginTest')
-data.setCell(8, 3, 2622);
+data.setCell(8, 3, 2523);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 46 seconds</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -409,49 +446,51 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">initPage</span>
-                <span class="method-start">24912 ms</span>
+                <span class="method-start">28966 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginPage</span>
-                <span class="method-start">24931 ms</span>
+                <span class="method-start">28994 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">emptyLogin</span>
-                <span class="method-start">45403 ms</span>
+                <span class="method-start">49525 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">unregisteredMobileNumber</span>
-                <span class="method-start">48889 ms</span>
+                <span class="method-start">52462 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">invalidMobileFormat</span>
-                <span class="method-start">52846 ms</span>
+                <span class="method-start">56039 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">invalidDigits</span>
-                <span class="method-start">55845 ms</span>
+                <span class="method-start">59706 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyAlphabetNotAllowed</span>
-                <span class="method-start">59513 ms</span>
+                <span class="method-start">63249 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifySpecialCharactersNotAllowed</span>
-                <span class="method-start">62510 ms</span>
+                <span class="method-start">66288 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifySpacesNotAllowed</span>
-                <span class="method-start">65145 ms</span>
+                <span class="method-start">68929 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyMaximumTenDigits</span>
-                <span class="method-start">68736 ms</span>
+                <span class="method-start">72007 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">71495 ms</span>
+                <span class="method-start">74532 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

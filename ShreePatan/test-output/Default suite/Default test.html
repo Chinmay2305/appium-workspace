@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 09 18:30:05 IST 2026</td>
+<td>Started on:</td><td>Fri Jul 10 11:43:28 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>74 seconds (74045 ms)</td>
+<tr><td>Total time:</td><td>76 seconds (76291 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,6 +76,82 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='tests.LoginTest.unregisteredMobileNumber()'><b>unregisteredMobileNumber</b><br>Test class: tests.LoginTest</td>
+<td><div><pre>java.lang.AssertionError: expected [Please Enter Valid Contact Number] but found [User not exist]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at pages.LoginPage.verifyToast(LoginPage.java:123)
+	at tests.LoginTest.unregisteredMobileNumber(LoginTest.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace736868175", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace736868175'><pre>java.lang.AssertionError: expected [Please Enter Valid Contact Number] but found [User not exist]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at pages.LoginPage.verifyToast(LoginPage.java:123)
+	at tests.LoginTest.unregisteredMobileNumber(LoginTest.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>tests.LoginTest@c0c2f8d</td></tr>
+<tr>
 <td title='tests.LoginTest.verifySpacesNotAllowed()'><b>verifySpacesNotAllowed</b><br>Test class: tests.LoginTest</td>
 <td><div><pre>java.lang.AssertionError: expected [Please Enter Phone Number] but found [Please Enter Valid Contact Number]
 	at org.testng.Assert.fail(Assert.java:111)
@@ -84,7 +160,7 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
-	at pages.LoginPage.verifyToast(LoginPage.java:120)
+	at pages.LoginPage.verifyToast(LoginPage.java:123)
 	at tests.LoginTest.verifySpacesNotAllowed(LoginTest.java:119)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -120,7 +196,7 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
-	at pages.LoginPage.verifyToast(LoginPage.java:120)
+	at pages.LoginPage.verifyToast(LoginPage.java:123)
 	at tests.LoginTest.verifySpacesNotAllowed(LoginTest.java:119)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -161,9 +237,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.LoginTest.unregisteredMobileNumber()'><b>unregisteredMobileNumber</b><br>Test class: tests.LoginTest</td>
+<td title='tests.LoginTest.verifySpecialCharactersNotAllowed()'><b>verifySpecialCharactersNotAllowed</b><br>Test class: tests.LoginTest</td>
 <td></td>
-<td>3</td>
+<td>2</td>
 <td>tests.LoginTest@c0c2f8d</td></tr>
 <tr>
 <td title='tests.LoginTest.verifyMaximumTenDigits()'><b>verifyMaximumTenDigits</b><br>Test class: tests.LoginTest</td>
@@ -171,24 +247,9 @@ function toggleAllBoxes() {
 <td>2</td>
 <td>tests.LoginTest@c0c2f8d</td></tr>
 <tr>
-<td title='tests.LoginTest.verifyAlphabetNotAllowed()'><b>verifyAlphabetNotAllowed</b><br>Test class: tests.LoginTest</td>
+<td title='tests.LoginTest.loginPage()'><b>loginPage</b><br>Test class: tests.LoginTest</td>
 <td></td>
-<td>2</td>
-<td>tests.LoginTest@c0c2f8d</td></tr>
-<tr>
-<td title='tests.LoginTest.invalidMobileFormat()'><b>invalidMobileFormat</b><br>Test class: tests.LoginTest</td>
-<td></td>
-<td>2</td>
-<td>tests.LoginTest@c0c2f8d</td></tr>
-<tr>
-<td title='tests.LoginTest.emptyLogin()'><b>emptyLogin</b><br>Test class: tests.LoginTest</td>
-<td></td>
-<td>3</td>
-<td>tests.LoginTest@c0c2f8d</td></tr>
-<tr>
-<td title='tests.LoginTest.verifySpecialCharactersNotAllowed()'><b>verifySpecialCharactersNotAllowed</b><br>Test class: tests.LoginTest</td>
-<td></td>
-<td>2</td>
+<td>20</td>
 <td>tests.LoginTest@c0c2f8d</td></tr>
 <tr>
 <td title='tests.LoginTest.invalidDigits()'><b>invalidDigits</b><br>Test class: tests.LoginTest</td>
@@ -196,9 +257,19 @@ function toggleAllBoxes() {
 <td>3</td>
 <td>tests.LoginTest@c0c2f8d</td></tr>
 <tr>
-<td title='tests.LoginTest.loginPage()'><b>loginPage</b><br>Test class: tests.LoginTest</td>
+<td title='tests.LoginTest.emptyLogin()'><b>emptyLogin</b><br>Test class: tests.LoginTest</td>
 <td></td>
-<td>20</td>
+<td>2</td>
+<td>tests.LoginTest@c0c2f8d</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyAlphabetNotAllowed()'><b>verifyAlphabetNotAllowed</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>3</td>
+<td>tests.LoginTest@c0c2f8d</td></tr>
+<tr>
+<td title='tests.LoginTest.invalidMobileFormat()'><b>invalidMobileFormat</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>3</td>
 <td>tests.LoginTest@c0c2f8d</td></tr>
 </table><p>
 </body>

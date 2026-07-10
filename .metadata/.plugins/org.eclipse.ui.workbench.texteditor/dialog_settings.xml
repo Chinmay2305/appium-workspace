@@ -10,6 +10,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="verifyt"/>
 			<item value="lava"/>
 			<item value="space"/>
 			<item value="login"/>
@@ -24,7 +25,6 @@
 			<item value="addcon"/>
 			<item value="splash"/>
 			<item value="c:"/>
-			<item value="C"/>
 		</list>
 		<list key="replacehistory">
 		</list>

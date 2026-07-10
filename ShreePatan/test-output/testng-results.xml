@@ -1,49 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+<testng-results ignored="0" total="9" passed="7" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-09T18:30:05 IST" name="Default suite" finished-at="2026-07-09T18:31:19 IST" duration-ms="74045">
+  <suite started-at="2026-07-10T11:43:28 IST" name="Default suite" finished-at="2026-07-10T11:44:45 IST" duration-ms="76291">
     <groups>
     </groups>
-    <test started-at="2026-07-09T18:30:05 IST" name="Default test" finished-at="2026-07-09T18:31:19 IST" duration-ms="74045">
+    <test started-at="2026-07-10T11:43:28 IST" name="Default test" finished-at="2026-07-10T11:44:45 IST" duration-ms="76291">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-09T18:30:05 IST" name="setUp" finished-at="2026-07-09T18:30:30 IST" duration-ms="24911" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-10T11:43:29 IST" name="setUp" finished-at="2026-07-10T11:43:57 IST" duration-ms="28965" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-09T18:30:30 IST" name="initPage" finished-at="2026-07-09T18:30:30 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-10T11:43:57 IST" name="initPage" finished-at="2026-07-10T11:43:57 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method signature="loginPage()[pri:1, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-09T18:30:30 IST" name="loginPage" finished-at="2026-07-09T18:30:50 IST" duration-ms="20463" status="PASS">
+        <test-method signature="loginPage()[pri:1, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-10T11:43:58 IST" name="loginPage" finished-at="2026-07-10T11:44:18 IST" duration-ms="20525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPage -->
-        <test-method signature="emptyLogin()[pri:2, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-09T18:30:50 IST" name="emptyLogin" finished-at="2026-07-09T18:30:54 IST" duration-ms="3471" status="PASS">
+        <test-method signature="emptyLogin()[pri:2, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-10T11:44:18 IST" name="emptyLogin" finished-at="2026-07-10T11:44:21 IST" duration-ms="2933" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyLogin -->
-        <test-method signature="unregisteredMobileNumber()[pri:3, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-09T18:30:54 IST" name="unregisteredMobileNumber" finished-at="2026-07-09T18:30:58 IST" duration-ms="3954" status="PASS">
+        <test-method signature="unregisteredMobileNumber()[pri:3, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-10T11:44:21 IST" name="unregisteredMobileNumber" finished-at="2026-07-10T11:44:25 IST" duration-ms="3559" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please Enter Valid Contact Number] but found [User not exist]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please Enter Valid Contact Number] but found [User not exist]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at pages.LoginPage.verifyToast(LoginPage.java:123)
+at tests.LoginTest.unregisteredMobileNumber(LoginTest.java:75)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- unregisteredMobileNumber -->
-        <test-method signature="invalidMobileFormat()[pri:4, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-09T18:30:58 IST" name="invalidMobileFormat" finished-at="2026-07-09T18:31:01 IST" duration-ms="2995" status="PASS">
+        <test-method signature="invalidMobileFormat()[pri:4, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-10T11:44:25 IST" name="invalidMobileFormat" finished-at="2026-07-10T11:44:28 IST" duration-ms="3663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidMobileFormat -->
-        <test-method signature="invalidDigits()[pri:5, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-09T18:31:01 IST" name="invalidDigits" finished-at="2026-07-09T18:31:04 IST" duration-ms="3666" status="PASS">
+        <test-method signature="invalidDigits()[pri:5, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-10T11:44:28 IST" name="invalidDigits" finished-at="2026-07-10T11:44:32 IST" duration-ms="3539" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidDigits -->
-        <test-method signature="verifyAlphabetNotAllowed()[pri:6, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-09T18:31:04 IST" name="verifyAlphabetNotAllowed" finished-at="2026-07-09T18:31:07 IST" duration-ms="2977" status="PASS">
+        <test-method signature="verifyAlphabetNotAllowed()[pri:6, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-10T11:44:32 IST" name="verifyAlphabetNotAllowed" finished-at="2026-07-10T11:44:35 IST" duration-ms="3036" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAlphabetNotAllowed -->
-        <test-method signature="verifySpecialCharactersNotAllowed()[pri:7, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-09T18:31:07 IST" name="verifySpecialCharactersNotAllowed" finished-at="2026-07-09T18:31:10 IST" duration-ms="2622" status="PASS">
+        <test-method signature="verifySpecialCharactersNotAllowed()[pri:7, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-10T11:44:35 IST" name="verifySpecialCharactersNotAllowed" finished-at="2026-07-10T11:44:37 IST" duration-ms="2636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySpecialCharactersNotAllowed -->
-        <test-method signature="verifySpacesNotAllowed()[pri:8, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-09T18:31:10 IST" name="verifySpacesNotAllowed" finished-at="2026-07-09T18:31:13 IST" duration-ms="3576" status="FAIL">
+        <test-method signature="verifySpacesNotAllowed()[pri:8, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-10T11:44:37 IST" name="verifySpacesNotAllowed" finished-at="2026-07-10T11:44:41 IST" duration-ms="3072" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Please Enter Phone Number] but found [Please Enter Valid Contact Number]]]>
@@ -56,7 +99,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at pages.LoginPage.verifyToast(LoginPage.java:120)
+at pages.LoginPage.verifyToast(LoginPage.java:123)
 at tests.LoginTest.verifySpacesNotAllowed(LoginTest.java:119)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -90,11 +133,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySpacesNotAllowed -->
-        <test-method signature="verifyMaximumTenDigits()[pri:9, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-09T18:31:13 IST" name="verifyMaximumTenDigits" finished-at="2026-07-09T18:31:16 IST" duration-ms="2756" status="PASS">
+        <test-method signature="verifyMaximumTenDigits()[pri:9, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-10T11:44:41 IST" name="verifyMaximumTenDigits" finished-at="2026-07-10T11:44:43 IST" duration-ms="2523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMaximumTenDigits -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-09T18:31:16 IST" name="tearDown" finished-at="2026-07-09T18:31:19 IST" duration-ms="2521" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@c0c2f8d]" started-at="2026-07-10T11:44:43 IST" name="tearDown" finished-at="2026-07-10T11:44:45 IST" duration-ms="1735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

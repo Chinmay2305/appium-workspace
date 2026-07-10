@@ -72,8 +72,8 @@ public class LoginTest extends BaseTest
 	{
 		test = extent.createTest("Unregistered Mobile Number");
 	    c.login("9898989898");
-	    c.verifyToast("User not exist");
-	    test.pass("User not exist");
+	    c.verifyToast("Please Enter Valid Contact Number");
+	    test.pass("Please Enter Valid Contact Number");
 	}
 	
 	@Test(priority = 4)
@@ -86,14 +86,6 @@ public class LoginTest extends BaseTest
 	}
 	
 	@Test(priority = 5)
-	public void invalidDigits()
-	{
-	    test = extent.createTest("Invalid Digits");
-	    c.login("12345");
-	    c.verifyToast("Please Enter Valid Contact Number");
-	}
-	
-	@Test(priority = 6)
 	public void verifyAlphabetNotAllowed()
 	{
 	    test = extent.createTest("Alphabet Input Validation");
@@ -102,7 +94,7 @@ public class LoginTest extends BaseTest
 	    test.pass("Application ignored alphabet input and displayed the correct validation message.");
 	}
 	
-	@Test(priority = 7)
+	@Test(priority = 6)
 	public void verifySpecialCharactersNotAllowed()
 	{
 	    test = extent.createTest("Special Character Validation");
@@ -111,7 +103,7 @@ public class LoginTest extends BaseTest
 	    test.pass("Application ignored special characters and displayed the correct validation message.");
 	}
 	
-	@Test(priority = 8)
+	@Test(priority = 7)
 	public void verifySpacesNotAllowed()
 	{
 	    test = extent.createTest("Space Validation");
@@ -120,8 +112,16 @@ public class LoginTest extends BaseTest
 	    test.pass("Application ignored spaces and displayed the correct validation message.");
 	}
 	
+	@Test(priority = 8)
+	public void LessThan10Digits()
+	{
+	    test = extent.createTest("Invalid Digits");
+	    c.login("12345");
+	    c.verifyToast("Please Enter Valid Contact Number");
+	}
+	
 	@Test(priority = 9)
-	public void verifyMaximumTenDigits()
+	public void MoreThan10Digits()
 	{
 		test = extent.createTest("Maximum 10 Digits Validation");
 	    String input = "98765432101234";

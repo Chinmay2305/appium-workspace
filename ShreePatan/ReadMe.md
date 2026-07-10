@@ -1,7 +1,6 @@
 # Android Automation Proof of Concept (PoC)
 
 ## Overview
-
 This project is a Proof of Concept (PoC) for Android Mobile Automation using Appium, Java, TestNG and Maven.
 The project demonstrates the automation of the Login screen of the Shree Patan Jain Mandal Android application using the Page Object Model (POM) design pattern.
 
@@ -32,14 +31,20 @@ src
  │    │      │       ReportManager.java
  │    │      │
  │    │      ├── resources
- │    │      │      app.patan.jainmandal.shree_patan_jain_mandal.apk  
+ │    │      │      app.patan.jainmandal.shree_patan_jain_mandal.apk
+ │    │      │      config.arm64_v8a.apk
+ │    │      │      config.en.apk
+ │    │      │      config.mdpi.apk
+ │    │      │      config.zh.apk
+ │    │      │      icon.png
+ │    │      │      manifest.json
  pom.xml
+ ReadMe.md
 ```
 
 ---
 
 ## Features Implemented
-
 - Automatic Appium Server startup
 - Automatic Appium Server shutdown
 - Automatic Application Launch
@@ -54,7 +59,6 @@ src
 ## Automated Test Scenarios
 
 ### Login Screen UI
-
 - Verify Welcome title
 - Verify subtitle
 - Verify login heading
@@ -64,20 +68,18 @@ src
 ---
 
 ### Functional Validation
-
 - Empty Mobile Number
-- Invalid Mobile Number Format
 - Unregistered Mobile Number
-- Invalid Mobile Number Length
+- Invalid Mobile Number Format
 - Alphabet Input Validation
 - Special Character Validation
 - Space Validation
-- Maximum 10 Digit Validation
+- Less than 10 Digits Validation
+- More than 10 Digits Validation
 
 ---
 
 ## Reports
-
 Execution report is generated automatically using Extent Reports.
 
 Location:
@@ -92,16 +94,16 @@ test-output/ExtentReport.html
 
 ### Prerequisites
 
-- Java JDK 21+
+- Java JDK 8
 - Maven
 - Node.js
 - Appium Server
 - Android SDK
 - Android Emulator or Real Device
-- **P.S. Note**: This is a split apk (not a debug or universal one) so, follow these steps:
-	1. Launch the desired emulator
-		2. Change the name of emulator in the code
-		3. Then install it using ADB: adb install-multiple base.apk config.en.apk config.mdpi.apk config.arm64_v8a.apk
+- **P.S. Note**: This is a split apk (not a debug or universal one) so, follow these steps for installation:
+	1. Launch the desired emulator in android studio
+		2. Change the name of emulator in the eclipse code
+		3. In CMD from app location [here: \ShreePatan\src\test\java\resources], install using ADB: adb install-multiple base.apk config.en.apk config.mdpi.apk config.arm64_v8a.apk
 		4. Now Appium code will work
 
 ---
