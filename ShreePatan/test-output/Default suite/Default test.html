@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>7/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jul 10 11:43:28 IST 2026</td>
+<td>Started on:</td><td>Fri Jul 10 12:22:05 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>76 seconds (76291 ms)</td>
+<tr><td>Total time:</td><td>75 seconds (75985 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,7 +77,7 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='tests.LoginTest.unregisteredMobileNumber()'><b>unregisteredMobileNumber</b><br>Test class: tests.LoginTest</td>
-<td><div><pre>java.lang.AssertionError: expected [Please Enter Valid Contact Number] but found [User not exist]
+<td><div><pre>java.lang.AssertionError: expected [Please Enter Valid Contact Number] but found [Please Enter Phone Number]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -113,7 +113,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div><a href='#' onClick='toggleBox("stack-trace736868175", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace736868175'><pre>java.lang.AssertionError: expected [Please Enter Valid Contact Number] but found [User not exist]
+<div class='stack-trace' id='stack-trace736868175'><pre>java.lang.AssertionError: expected [Please Enter Valid Contact Number] but found [Please Enter Phone Number]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -149,7 +149,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>3</td>
+<td>1</td>
 <td>tests.LoginTest@c0c2f8d</td></tr>
 <tr>
 <td title='tests.LoginTest.verifySpacesNotAllowed()'><b>verifySpacesNotAllowed</b><br>Test class: tests.LoginTest</td>
@@ -161,7 +161,7 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
 	at pages.LoginPage.verifyToast(LoginPage.java:123)
-	at tests.LoginTest.verifySpacesNotAllowed(LoginTest.java:119)
+	at tests.LoginTest.verifySpacesNotAllowed(LoginTest.java:111)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -188,8 +188,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace901852282", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace901852282'><pre>java.lang.AssertionError: expected [Please Enter Phone Number] but found [Please Enter Valid Contact Number]
+</pre></div><a href='#' onClick='toggleBox("stack-trace174245837", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace174245837'><pre>java.lang.AssertionError: expected [Please Enter Phone Number] but found [Please Enter Valid Contact Number]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -197,7 +197,7 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
 	at pages.LoginPage.verifyToast(LoginPage.java:123)
-	at tests.LoginTest.verifySpacesNotAllowed(LoginTest.java:119)
+	at tests.LoginTest.verifySpacesNotAllowed(LoginTest.java:111)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -225,7 +225,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>3</td>
+<td>2</td>
 <td>tests.LoginTest@c0c2f8d</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -237,12 +237,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.LoginTest.verifySpecialCharactersNotAllowed()'><b>verifySpecialCharactersNotAllowed</b><br>Test class: tests.LoginTest</td>
-<td></td>
-<td>2</td>
-<td>tests.LoginTest@c0c2f8d</td></tr>
-<tr>
-<td title='tests.LoginTest.verifyMaximumTenDigits()'><b>verifyMaximumTenDigits</b><br>Test class: tests.LoginTest</td>
+<td title='tests.LoginTest.MoreThan10Digits()'><b>MoreThan10Digits</b><br>Test class: tests.LoginTest</td>
 <td></td>
 <td>2</td>
 <td>tests.LoginTest@c0c2f8d</td></tr>
@@ -252,7 +247,7 @@ function toggleAllBoxes() {
 <td>20</td>
 <td>tests.LoginTest@c0c2f8d</td></tr>
 <tr>
-<td title='tests.LoginTest.invalidDigits()'><b>invalidDigits</b><br>Test class: tests.LoginTest</td>
+<td title='tests.LoginTest.verifyAlphabetNotAllowed()'><b>verifyAlphabetNotAllowed</b><br>Test class: tests.LoginTest</td>
 <td></td>
 <td>3</td>
 <td>tests.LoginTest@c0c2f8d</td></tr>
@@ -262,14 +257,19 @@ function toggleAllBoxes() {
 <td>2</td>
 <td>tests.LoginTest@c0c2f8d</td></tr>
 <tr>
-<td title='tests.LoginTest.verifyAlphabetNotAllowed()'><b>verifyAlphabetNotAllowed</b><br>Test class: tests.LoginTest</td>
+<td title='tests.LoginTest.verifySpecialCharactersNotAllowed()'><b>verifySpecialCharactersNotAllowed</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>2</td>
+<td>tests.LoginTest@c0c2f8d</td></tr>
+<tr>
+<td title='tests.LoginTest.LessThan10Digits()'><b>LessThan10Digits</b><br>Test class: tests.LoginTest</td>
 <td></td>
 <td>3</td>
 <td>tests.LoginTest@c0c2f8d</td></tr>
 <tr>
 <td title='tests.LoginTest.invalidMobileFormat()'><b>invalidMobileFormat</b><br>Test class: tests.LoginTest</td>
 <td></td>
-<td>3</td>
+<td>4</td>
 <td>tests.LoginTest@c0c2f8d</td></tr>
 </table><p>
 </body>

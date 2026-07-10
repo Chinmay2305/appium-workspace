@@ -17,7 +17,7 @@ public class ReportManager {
             ExtentSparkReporter spark =
                     new ExtentSparkReporter(reportPath);
 
-            spark.config().setReportName("FirstContacts Automation Report");
+            spark.config().setReportName("Shree Patan Jain Mandal Automation Report");
             spark.config().setDocumentTitle("Appium Test Report");
 
             extent = new ExtentReports();
@@ -30,5 +30,4 @@ public class ReportManager {
 
         return extent;
     }
-
 }

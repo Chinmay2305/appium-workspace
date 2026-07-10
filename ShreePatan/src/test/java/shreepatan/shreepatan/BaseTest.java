@@ -26,6 +26,15 @@ public class BaseTest {
     @BeforeClass
     public void setUp() throws MalformedURLException
     {
+    	String device = "LAVA LXX518 API 36.0"; //Mention your desired device here
+    	/*Sample devices I tested on:
+    	 * Pixel 10 Pro XL API 36.1
+    	 * LAVA LXX518 API 36.0
+    	 * Pixel 9 API 36.0
+    	 * Small Phone API 26
+    	 * Pixel 6a
+    	 */
+    	
         service = new AppiumServiceBuilder()
                 .withAppiumJS(new File("C:\\Users\\Quality Analyst 3\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
                 .withIPAddress("127.0.0.1")
@@ -33,11 +42,7 @@ public class BaseTest {
                 .build();
         service.start();
         UiAutomator2Options options = new UiAutomator2Options();
-        options.setDeviceName("LAVA LXX518 API 36.0");
-        //options.setDeviceName("Pixel 10 Pro XL API 36.1");
-        //options.setDeviceName("Pixel 9 API 36.0");
-        //options.setDeviceName("Small Phone API 26");
-        //options.setDeviceName("Pixel 6a");
+        options.setDeviceName(device);
         options.setPlatformName("Android");
         options.setAutomationName("UIAutomator2");
         options.setAutoGrantPermissions(true);

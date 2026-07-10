@@ -9,11 +9,11 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">76,291</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">75,985</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">tests.LoginTest</td><td><a href="#m0">unregisteredMobileNumber</a></td><td rowspan="1">1783664061479</td><td rowspan="1">3559</td></tr><tr class="failedeven"><td><a href="#m1">verifySpacesNotAllowed</a></td><td rowspan="1">1783664077946</td><td rowspan="1">3072</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">tests.LoginTest</td><td><a href="#m2">emptyLogin</a></td><td rowspan="1">1783664058542</td><td rowspan="1">2933</td></tr><tr class="passedeven"><td><a href="#m3">invalidDigits</a></td><td rowspan="1">1783664068723</td><td rowspan="1">3539</td></tr><tr class="passedeven"><td><a href="#m4">invalidMobileFormat</a></td><td rowspan="1">1783664065056</td><td rowspan="1">3663</td></tr><tr class="passedeven"><td><a href="#m5">loginPage</a></td><td rowspan="1">1783664038011</td><td rowspan="1">20525</td></tr><tr class="passedeven"><td><a href="#m6">verifyAlphabetNotAllowed</a></td><td rowspan="1">1783664072266</td><td rowspan="1">3036</td></tr><tr class="passedeven"><td><a href="#m7">verifyMaximumTenDigits</a></td><td rowspan="1">1783664081024</td><td rowspan="1">2523</td></tr><tr class="passedeven"><td><a href="#m8">verifySpecialCharactersNotAllowed</a></td><td rowspan="1">1783664075305</td><td rowspan="1">2636</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">tests.LoginTest</td><td><a href="#m0">unregisteredMobileNumber</a></td><td rowspan="1">1783666378219</td><td rowspan="1">1598</td></tr><tr class="failedeven"><td><a href="#m1">verifySpacesNotAllowed</a></td><td rowspan="1">1783666390166</td><td rowspan="1">2926</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">tests.LoginTest</td><td><a href="#m2">LessThan10Digits</a></td><td rowspan="1">1783666393098</td><td rowspan="1">3490</td></tr><tr class="passedeven"><td><a href="#m3">MoreThan10Digits</a></td><td rowspan="1">1783666396592</td><td rowspan="1">2343</td></tr><tr class="passedeven"><td><a href="#m4">emptyLogin</a></td><td rowspan="1">1783666375332</td><td rowspan="1">2885</td></tr><tr class="passedeven"><td><a href="#m5">invalidMobileFormat</a></td><td rowspan="1">1783666379823</td><td rowspan="1">4666</td></tr><tr class="passedeven"><td><a href="#m6">loginPage</a></td><td rowspan="1">1783666355017</td><td rowspan="1">20311</td></tr><tr class="passedeven"><td><a href="#m7">verifyAlphabetNotAllowed</a></td><td rowspan="1">1783666384494</td><td rowspan="1">3023</td></tr><tr class="passedeven"><td><a href="#m8">verifySpecialCharactersNotAllowed</a></td><td rowspan="1">1783666387520</td><td rowspan="1">2640</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">tests.LoginTest#unregisteredMobileNumber</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Please Enter Valid Contact Number] but found [User not exist]
+<h2>Default test</h2><h3 id="m0">tests.LoginTest#unregisteredMobileNumber</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Please Enter Valid Contact Number] but found [Please Enter Phone Number]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -57,7 +57,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
 	at pages.LoginPage.verifyToast(LoginPage.java:123)
-	at tests.LoginTest.verifySpacesNotAllowed(LoginTest.java:119)
+	at tests.LoginTest.verifySpacesNotAllowed(LoginTest.java:111)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -85,12 +85,12 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.LoginTest#emptyLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.LoginTest#invalidDigits</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.LoginTest#invalidMobileFormat</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">tests.LoginTest#loginPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">tests.LoginTest#verifyAlphabetNotAllowed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">tests.LoginTest#verifyMaximumTenDigits</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.LoginTest#LessThan10Digits</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.LoginTest#MoreThan10Digits</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.LoginTest#emptyLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.LoginTest#invalidMobileFormat</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.LoginTest#loginPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.LoginTest#verifyAlphabetNotAllowed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m8">tests.LoginTest#verifySpecialCharactersNotAllowed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
